@@ -1,0 +1,9 @@
+{
+  "name": "Ezviz Smart Plug",
+  "hacs": "1.25.0",
+  "domains": [
+    "switch"
+  ],
+  "iot_class": "Cloud Polling",
+  "homeassistant": "2022.6.0"
+}
