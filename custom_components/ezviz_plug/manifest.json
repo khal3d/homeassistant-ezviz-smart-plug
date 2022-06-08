@@ -1,5 +1,5 @@
 {
-  "codeowners": ["khal3d"],
+  "codeowners": ["@khal3d"],
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/khal3d/homeassistant-ezviz-smart-plug",
