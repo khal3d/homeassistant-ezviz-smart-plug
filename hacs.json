@@ -1,5 +1,6 @@
 {
   "name": "Ezviz Smart Plug",
   "hacs": "1.25.0",
-  "homeassistant": "2022.6.0"
+  "homeassistant": "2022.6.0",
+  "render_readme": true
 }

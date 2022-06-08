@@ -4,7 +4,6 @@
   "dependencies": [],
   "documentation": "https://github.com/khal3d/homeassistant-ezviz-smart-plug",
   "issue_tracker": "https://github.com/khal3d/homeassistant-ezviz-smart-plug/issues",
-  "render_readme": true,
   "domain": "ezviz_plug",
   "iot_class": "cloud_polling",
   "name": "EZVIZ Smart Plug",
