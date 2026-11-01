@@ -7,6 +7,6 @@
   "domain": "ezviz_plug",
   "iot_class": "cloud_polling",
   "name": "EZVIZ Smart Plug",
-  "requirements": [],
-  "version": "1.0.0"
+  "requirements": ["pyezvizapi>=1.0.5.0"],
+  "version": "1.0.1"
 }

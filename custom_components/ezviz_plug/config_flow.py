@@ -1,8 +1,8 @@
 from homeassistant import config_entries
 from homeassistant.const import CONF_EMAIL, CONF_PASSWORD, CONF_URL, CONF_TIMEOUT, CONF_CUSTOMIZE
 from .const import DOMAIN, DEFAULT_TIMEOUT, EU_URL, RUSSIA_URL, CONF_RFSESSION_ID, CONF_SESSION_ID
-from pyezviz.client import EzvizClient
-from pyezviz.exceptions import (
+from pyezvizapi.client import EzvizClient
+from pyezvizapi.exceptions import (
     AuthTestResultFailed,
     EzvizAuthVerificationCode,
     InvalidHost,

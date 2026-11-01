@@ -19,8 +19,8 @@ from homeassistant.config_entries import ConfigEntry
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant import core
 
-from pyezviz import client
-from pyezviz.exceptions import (
+from pyezvizapi import client
+from pyezvizapi.exceptions import (
     AuthTestResultFailed,
     EzvizAuthVerificationCode,
     InvalidHost,
@@ -29,7 +29,7 @@ from pyezviz.exceptions import (
     PyEzvizError,
 )
 
-from pyezviz.constants import (DeviceSwitchType)
+from pyezvizapi.constants import (DeviceSwitchType)
 from .const import DOMAIN
 from .coordinator import EzvizDataUpdateCoordinator
 
