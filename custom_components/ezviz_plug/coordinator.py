@@ -2,9 +2,9 @@
 from datetime import timedelta
 import logging
 
-from async_timeout import timeout
-from pyezviz.client import EzvizClient
-from pyezviz.exceptions import HTTPError, InvalidURL, PyEzvizError
+import asyncio
+from pyezvizapi.client import EzvizClient
+from pyezvizapi.exceptions import HTTPError, InvalidURL, PyEzvizError
 
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
@@ -43,7 +43,7 @@ class EzvizDataUpdateCoordinator(DataUpdateCoordinator):
     async def _async_update_data(self) -> dict:
         """Fetch data from Ezviz."""
         try:
-            async with timeout(self._api_timeout):
+            async with asyncio.timeout(self._api_timeout):
                 return await self.hass.async_add_executor_job(self._update_data)
 
         except (InvalidURL, HTTPError, PyEzvizError) as error:
